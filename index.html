@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parallax Login</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: Arial, sans-serif;
+      }
+
+      .parallax {
+        /* The image used */
+        background-image: url("./parallax-image-1024x585.jpg");
+
+        /* Full height */
+        height: 100%;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+      }
+
+      .login-form {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        border-radius: 10px;
+        backdrop-filter: blur(10px); /* Efeito de desfoque */
+      }
+
+      .login-form input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+      }
+
+      .login-form button {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+        background-color: #4caf50;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      .login-form button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parallax">
+      <div class="container">
+        <h1>Welcome My WebSite</h1>
+        <div class="login-form">
+          <h2>Login</h2>
+          <form>
+            <input type="text" placeholder="Username" required />
+            <input type="password" placeholder="Password" required />
+            <button type="submit">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div
+      style="
+        height: 100%;
+        background-image: url(./e7b4ce09c703210ab8f75b017c7eaf0951c5a95b737ee8120602845c1c1d944b.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      "
+    >
+      <!-- Content after the parallax section -->
+    </div>
+  </body>
+</html>
